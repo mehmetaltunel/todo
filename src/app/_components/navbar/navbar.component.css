@@ -1,0 +1,14 @@
+.nav{
+    color: white;
+    background-color: #555;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 15px;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
