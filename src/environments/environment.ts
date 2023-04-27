@@ -6,5 +6,5 @@ export const environment = {
     name: 'Mehmet',
     surName: 'Altunel'
   },
-  url: 'localhost:5000'
+  url: 'https://localhost:7122/api'
 };

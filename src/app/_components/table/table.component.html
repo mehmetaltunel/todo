@@ -1,0 +1,21 @@
+<table id="table">
+    <tr>
+        <th *ngFor=" let column of columnNames">
+            <span *ngIf="column.visible">
+                {{column.name}}
+            </span>
+        </th>
+    </tr>
+    <tr *ngFor="let data of datas">
+        <td *ngFor="let column of columnNames">
+            <span *ngIf="column.visible">
+                <span *ngIf="column.format == 'date'">
+                    {{data[column.name] | date:'dd:MM:YYYY : hh:mm:ss'}}
+                </span>
+                <span *ngIf="column.format == 'string' || !column.format">
+                    {{data[column.name]}}
+                </span>
+            </span>
+        </td>
+    </tr>
+</table>
